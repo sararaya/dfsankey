@@ -1,34 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flourish Sankey Chart</title>
-    <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flourish Visualization</title>
+<style>
         body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
+            justify-content: center;
             height: 100vh;
-            background-color: transparent; /* Ensures transparency */
+            background-color: #f4f4f4;
         }
-        .chart-container {
+        .container {
             width: 80%;
-            height: 80vh;
-            background-color: transparent; /* Transparent background */
+            max-width: 1200px;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            text-align: center;
         }
-    </style>
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+        .credit {
+            margin-top: 10px;
+            text-align: right;
+        }
+</style>
 </head>
 <body>
-    <div class="chart-container">
-        <div class="flourish-embed flourish-sankey" data-src="visualisation/21631123" data-background="transparent">
-            <script src="https://public.flourish.studio/resources/embed.js"></script>
-            <noscript>
-                <img src="https://public.flourish.studio/visualisation/21631123/thumbnail" width="100%" alt="Sankey Visualization" />
-            </noscript>
-        </div>
-    </div>
+<div class="container">
+<h2></h2>
+<iframe src='https://flo.uri.sh/visualisation/21631123/embed' 
+                title='Interactive or visual content' 
+                class='flourish-embed-iframe' 
+                frameborder='0' 
+                scrolling='no' 
+                sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'>
+</iframe>
+<div class="credit">
+<a class='flourish-credit' 
+               href='https://public.flourish.studio/visualisation/21631123/?utm_source=embed&utm_campaign=visualisation/21631123' 
+               target='_top' 
+               style='text-decoration:none;'>
+<img alt='Made with Flourish' 
+                     src='https://public.flourish.studio/resources/made_with_flourish.svg' 
+                     style='width:105px;height:16px;border:none;'>
+</a>
+</div>
+</div>
 </body>
 </html>
